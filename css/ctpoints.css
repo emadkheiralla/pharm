@@ -1,0 +1,114 @@
+
+/*global styles*/
+html { width: 1024px; height: 768px; margin:0 auto;}
+body {
+	margin:0px; padding:0;
+    width: 1024px;
+    height: 768px;
+    font-family: MyriadLightIt;
+    overflow: hidden;
+	font-size:18px;
+	color:#4a4948;
+    -webkit-font-smoothing: antialiased; /* for desktop safari testing */
+    -webkit-touch-callout: none; /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit – not sure if we need this one*/
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+    -webkit-user-select: none; /* prevent copy paste, to allow, change 'none' to 'text' */
+}
+
+.center-test { width: 300px; height: 300px; text-align: center; background-color: #333; }
+.center-test span { height: 300px; display: inline-block; zoom: 1; *display: inline; vertical-align: middle; }
+.center-test h1 { display: inline-block; zoom: 1; *display: inline; vertical-align: middle; color: #fff; }
+
+.hexbtn{
+	height: 20%;
+	width: 40%;
+}
+button{
+	background-color: #e6dfc1;
+	border: none;
+	padding-left: 100px;
+}
+
+#bluecircle{
+	background-color: blue;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	color: white;
+	margin: 0 auto;
+	vertical-align: middle;
+}
+
+#redsquare{
+	background-color: red;
+	border-radius: 5px;
+	width: 150px;
+	height: 150px;
+}
+
+
+.container {
+	overflow: hidden;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);;
+	width: 1024px; height: 768px;
+	position: relative;
+	-webkit-transform : translate3d(0,0,0); 
+	margin: 0px;padding: 0px;
+	top:0px;left:0px;
+	background:url(../images/bg.jpg) 0 0 repeat-x;
+}
+
+.header{
+	width:100%;
+	height:106px;
+	background: url(../images/header.jpg) 0 0 repeat-x;
+}
+
+.header .title, .header .titleright{margin-top:22px;}
+.header .titleblock{float:left; padding-left:107px; padding-top:22px; font-size:24px; height:106px;}
+h3 {font-family:'MyriadSemibold'; font-weight:normal;}
+.titleblock h3{font-size:30px; margin:0; padding:0;}
+.titleright{float:right; margin-right:28px;}
+
+.content {width:100%; height:662px;position: relative;}
+.contentbox{width:780px; height:494px; background:#e6dfc1; margin:64px 119px 0px;-moz-border-radius: 8px; border-radius: 8px;position:relative;}
+
+.clear{ font-size: 1px; line-height: 1px; margin: 0px; padding: 0px; clear: both; }
+.left{float:left;}
+.right{float:right;}
+
+
+/****************  bottom nav   *****************************/
+
+
+
+
+/****************  home page content  *****************************/
+
+#homepage .header{text-align:center;}
+
+
+.hex{ position:absolute; width:279px; height:316px; text-align:center; font-size:21px;}
+.hex h3{font-size:26px; margin:112px 10px 0px; display:block;}
+#rheumhex{ left:60px; top:20px;background:url(../images/rheumhex.png) center center no-repeat;}
+#SOChex{left:380px; top:152px;background:url(../images/SOChex.png) center center no-repeat;}
+#gastrohex{left:700px; top:75px;background:url(../images/gastrohex.png) center center no-repeat;}
+
+
+/****************  Rheumatology page content  *****************************/
+
+#rheumpage .titleblock{background:url(../images/rheumhexsmall.png) 20px 12px no-repeat;}
+#rheumpage .contentbox{width:680px; height:394px; padding:50px; font-size:24px; line-height:50px;}
+
+
+/****************  SOC page content  *****************************/
+#socpage .titleblock{background:url(../images/SOChexsmall.png) 20px 12px no-repeat;}
+#socpage .contentbox {font-size:24px; padding:20px 30px; width:720px; height:454px; font-family:MyriadSemibold;}
+#socpage .contentbox hr{color:#4a4948; background-color:#4a4948; height:1px;border:0;margin-top:2px;}
+
+/****************  Gastroenterology page content  *****************************/
+#gastropage .titleblock{background:url(../images/gastrohexsmall.png) 20px 12px no-repeat;}
+#gastropage .contentbox div{height:460px; margin-top:34px;}
+#gastropage .contentbox .left{width:250px; margin-left:32px; font-family: MyriadSemibold; font-size:24px;}
+
